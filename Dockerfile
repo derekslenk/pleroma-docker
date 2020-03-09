@@ -1,3 +1,5 @@
+# https://docs-develop.pleroma.social/backend/installation/alpine_linux_en/
+
 FROM alpine:latest
 
 RUN awk 'NR==2' /etc/apk/repositories | sed 's/main/community/' | tee -a /etc/apk/repositories
